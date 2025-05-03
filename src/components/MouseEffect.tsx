@@ -70,13 +70,13 @@ export default function MouseEffect() {
         }}
       />
 
-      {/* Add animated shapes in background */}
+      {/* Add animated shapes in background with reduced opacity */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-[-2]">
-        <div className="shape w-[500px] h-[500px] left-[10%] top-[20%]" />
-        <div className="shape w-[300px] h-[300px] right-[5%] bottom-[20%]" />
-        <div className="shape w-[400px] h-[400px] left-[30%] bottom-[10%]" />
+        <div className="shape w-[500px] h-[500px] left-[10%] top-[20%] opacity-5" />
+        <div className="shape w-[300px] h-[300px] right-[5%] bottom-[20%] opacity-5" />
+        <div className="shape w-[400px] h-[400px] left-[30%] bottom-[10%] opacity-5" />
       </div>
-      <div className="background-grid" />
+      <div className="background-grid opacity-5" />
       <div className="background-gradient" />
     </>
   );

@@ -9,6 +9,7 @@ import CodeProfiles from "@/components/CodeProfiles";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MouseEffect from "@/components/MouseEffect";
+import StarBackground from "@/components/StarBackground";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
     <ThemeProvider>
       <div className="min-h-screen">
         <MouseEffect />
+        <StarBackground />
         <Header />
         <Hero />
         <About />
