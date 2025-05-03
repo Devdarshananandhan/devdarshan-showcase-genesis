@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("");
@@ -46,33 +47,42 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20"
     >
-      <div className="container mx-auto px-6 text-center md:text-left">
-        <div className="max-w-3xl mx-auto md:mx-0">
-          <p className="text-lg md:text-xl mb-2 text-primary font-medium opacity-0 animate-fade-in" style={{animationDelay: '0.2s'}}>
-            Hello, I'm
-          </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.4s'}}>
-            DevDarshan
-          </h1>
-          <div className="h-8 md:h-10 mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <span className="typing-text text-lg md:text-xl">
-              {typedText}
-            </span>
-          </div>
-          <p className="text-base md:text-lg mb-8 max-w-xl mx-auto md:mx-0 text-muted-foreground opacity-0 animate-fade-in" style={{animationDelay: '0.8s'}}>
-            Transforming ideas into exceptional digital experiences with code and creativity.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start opacity-0 animate-fade-in" style={{animationDelay: '1s'}}>
-            <a href="#projects" className="custom-button">
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-2.5 border border-border rounded-lg font-medium 
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="max-w-xl text-center md:text-left mb-10 md:mb-0">
+            <p className="text-lg md:text-xl mb-2 text-primary font-medium opacity-0 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              Hello, I'm
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              DevDarshan
+            </h1>
+            <div className="h-8 md:h-10 mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.6s'}}>
+              <span className="typing-text text-lg md:text-xl">
+                {typedText}
+              </span>
+            </div>
+            <p className="text-base md:text-lg mb-8 mx-auto md:mx-0 text-muted-foreground opacity-0 animate-fade-in" style={{animationDelay: '0.8s'}}>
+              Transforming ideas into exceptional digital experiences with code and creativity.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start opacity-0 animate-fade-in" style={{animationDelay: '1s'}}>
+              <a href="#projects" className="custom-button">
+                View My Work
+              </a>
+              <a
+                href="#contact"
+                className="px-6 py-2.5 border border-border rounded-lg font-medium 
                          transition-colors hover:bg-secondary hover:border-primary"
-            >
-              Get In Touch
-            </a>
+              >
+                Get In Touch
+              </a>
+            </div>
+          </div>
+
+          <div className="opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
+            <Avatar className="w-64 h-64 border-4 border-primary shadow-xl">
+              <AvatarImage src="/placeholder.svg" alt="DevDarshan" />
+              <AvatarFallback className="text-4xl">DD</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
