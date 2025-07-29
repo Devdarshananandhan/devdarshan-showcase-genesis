@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#home" className="text-xl font-bold gradient-text">
-              DevDarshan<span className="text-primary">.</span>
+              Devdarshan<span className="text-primary"></span>
             </a>
             <p className="text-sm text-muted-foreground mt-1">
               Full Stack Developer
@@ -19,10 +19,9 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-end">
             <p className="text-sm text-muted-foreground">
-              &copy; {currentYear} DevDarshan. All rights reserved.
+              &copy; {currentYear} Devdarshan. All rights reserved.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              Designed & Built with ❤️
             </p>
           </div>
         </div>

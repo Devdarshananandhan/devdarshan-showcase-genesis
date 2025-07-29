@@ -36,7 +36,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#home" className="text-xl md:text-2xl font-bold gradient-text">
-          DevDarshan<span className="text-primary">.</span>
+          Devdarshan<span className="text-primary"></span>
         </a>
 
         {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export default function Header() {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/devdarshan"
+              href="https://github.com/Devdarshananandhan"
               target="_blank"
               rel="noreferrer"
               className="hover:text-primary transition-colors"
@@ -74,7 +74,7 @@ export default function Header() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/devdarshan"
+              href="https://www.linkedin.com/in/devdarshan-a-416654291"
               target="_blank"
               rel="noreferrer"
               className="hover:text-primary transition-colors"

@@ -5,13 +5,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const roles = ["Full Stack Developer", "Flutter Developer", "UI/UX Designer"];
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
   useEffect(() => {
-    const typeSpeed = isDeleting ? 80 : 120;
+    const typeSpeed = isDeleting ? 100 : 120;
     
     const type = () => {
       const currentRole = roles[roleIndex];
@@ -24,7 +25,7 @@ export default function Hero() {
         if (charIndex >= currentRole.length) {
           setIsDeleting(true);
           // Pause at the end of typing
-          setTimeout(() => {}, 1500);
+          setTimeout(() => {}, 20000);
         }
       } else {
         // Deleting
@@ -54,7 +55,7 @@ export default function Hero() {
               Hello, I'm
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.4s'}}>
-              DevDarshan
+              Devdarshan
             </h1>
             <div className="h-8 md:h-10 mb-6 opacity-0 animate-fade-in" style={{animationDelay: '0.6s'}}>
               <span className="typing-text text-lg md:text-xl">
@@ -80,7 +81,7 @@ export default function Hero() {
 
           <div className="opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
             <Avatar className="w-64 h-64 border-4 border-primary shadow-xl">
-              <AvatarImage src="/placeholder.svg" alt="DevDarshan" />
+              <AvatarImage src="/assets/profilepic.jpg" alt="DevDarshan" />
               <AvatarFallback className="text-4xl">DD</AvatarFallback>
             </Avatar>
           </div>

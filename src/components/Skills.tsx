@@ -1,27 +1,27 @@
 
 import React from "react";
-import { Code2, Server, Database, Layout, FileJson, Shield } from "lucide-react";
+import { Code2, Server, Database, Layout, FileJson, Shield, ChartSpline, Bot, MonitorSmartphone } from "lucide-react";
 
 export default function Skills() {
   const skillsCategories = [
     {
       title: "Frontend Development",
       icon: <Layout className="h-8 w-8 text-primary" />,
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "HTML/CSS"]
+      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"]
     },
     {
       title: "Backend Development",
       icon: <Server className="h-8 w-8 text-primary" />,
-      skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "JWT", "OAuth"]
+      skills: ["Node.js", "Express.js", "REST APIs", "GraphQL"]
     },
     {
       title: "Database",
       icon: <Database className="h-8 w-8 text-primary" />,
-      skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis", "Mongoose"]
+      skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Supabase", "Mongoose"]
     },
     {
-      title: "Mobile Development",
-      icon: <Code2 className="h-8 w-8 text-primary" />,
+      title: "Mobile App Development",
+      icon: <MonitorSmartphone className="h-8 w-8 text-primary" />,
       skills: ["Flutter", "Dart", "React Native", "Android", "iOS", "Firebase"]
     },
     {
@@ -32,19 +32,29 @@ export default function Skills() {
     {
       title: "DevOps & Tools",
       icon: <Shield className="h-8 w-8 text-primary" />,
-      skills: ["Git", "GitHub", "Docker", "AWS", "CI/CD", "Jest/Testing"]
+      skills: ["Git", "GitHub", "Docker", "CI/CD", "Jest/Testing"]
     },
+    {
+      title: "Machine Learning",
+      icon: <Bot className="h-8 w-8 text-primary" />,
+      skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "OpenCV"]
+    },
+    {
+      title: "Data Science",
+      icon: <ChartSpline className="h-8 w-8 text-primary" />,
+      skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Analysis", "PowerBI", "Tableau"]
+    },
+    {
+      title: "Programming Languages",
+      icon: <Code2 className="h-8 w-8 text-primary" />,
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "Java"]
+    }
   ];
   
   return (
     <section id="skills" className="py-20 md:py-32 bg-secondary/30">
       <div className="container mx-auto px-6">
         <h2 className="section-title text-center">Skills & Expertise</h2>
-        <p className="text-center text-lg max-w-2xl mx-auto mb-16 text-muted-foreground">
-          I've worked with a wide range of technologies in the web and mobile development world.
-          Here's a quick overview of my technical skillset.
-        </p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {skillsCategories.map((category, index) => (
             <div 
