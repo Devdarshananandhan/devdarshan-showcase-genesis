@@ -25,7 +25,7 @@ export default function Projects() {
     {
       title: "WashWay",
       description: "A Flutter Application for college users to book a washer and dryer.",
-      technologies: ["Flutter", "Dart", "Firebase", "GoogleMapsAPi", "State Management"],
+      technologies: ["Flutter", "Dart", "Firebase", "GoogleMapsAPI", "State Management"],
       github: "https://github.com/Devdarshananandhan/washway",
     },
   ];
