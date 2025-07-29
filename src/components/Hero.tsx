@@ -81,7 +81,7 @@ export default function Hero() {
 
           <div className="opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
             <Avatar className="w-64 h-64 border-4 border-primary shadow-xl">
-              <AvatarImage src="/assets/profilepic.jpg" alt="DevDarshan" />
+              <AvatarImage src="https://raw.githubusercontent.com/Devdarshananandhan/devdarshan-showcase-genesis/main/assets/profilepic.jpg" alt="DevDarshan" />
               <AvatarFallback className="text-4xl">DD</AvatarFallback>
             </Avatar>
           </div>
